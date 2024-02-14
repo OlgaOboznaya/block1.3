@@ -1,0 +1,294 @@
+  body {  
+    margin: 0px;
+    width: 100%;
+}
+ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+} 
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url("TTLakes/TTLakes-Regular.woff") format("woff");
+     font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url("TTLakes/TTLakes-Bold.woff") format("woff");
+     font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url("TTLakes/TTLakes-Medium.woff") format("woff");
+     font-weight: 500;
+    font-style: normal;
+}
+
+.header {
+    /* width: 100%; */
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 16px;
+    font-family: 'TTLakes';
+    
+}  
+
+.list-1 {
+    display: flex;
+    justify-content: flex-start;
+    /* width: 100%; */
+    align-items: center;
+    /* height: 88px; */
+     gap: 16px; 
+
+}
+
+.list-2 {
+    display: flex;
+    justify-content: flex-end;
+    /* width: 100%; */
+    align-items: center;
+    /* height: 88px; */
+    gap: 16px;
+
+}
+
+.variable-2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.point {
+    /* margin: auto; */
+    /* padding: 13px; */
+
+}
+
+.button {
+    background: none;
+    border: none;
+     padding: 0;
+    padding-top: auto;
+    /* border: 16px; */
+
+}
+
+.call, .chat, .profile, .border-none, .variable-2, .text, .feedback {
+    display: none;
+}
+
+.status, .repair {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.border {
+    width: 2px;
+    height: 32px;
+    margin: auto;
+    background-color: #EAEAEA;
+}
+
+.main {
+    background-color: #F8F8F8;
+    /* width: 320px;
+    height: 509px; */
+    /* padding: 16px; */
+    font-family: 'TTLakes';
+    width: 100%; 
+    min-width: 320px;
+}
+.name{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items:end;
+}
+
+.highlight-2 {
+    width: 3px;
+    height: 40px;
+}
+
+h1 {
+    margin: 0;
+} 
+
+
+.bold {
+    font-weight: bold;
+    padding-left: 12px;
+
+}
+
+.section {
+    padding: 24px 16px;
+    padding-bottom:0;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    /* height: 40; */
+
+    
+}
+
+.nav__point {
+    /* height:40px; */
+    flex: none;
+    font-family: 'TTLakes';
+    margin-right: 25px;
+     
+    height: 40px;
+
+}
+
+
+
+.nav__button {
+    height:40px;
+    background: none;
+    border-width: 0px;
+    padding: 0;
+    font-size: 16px;
+    padding: 0px 8px; 
+    font-style: normal;
+    color: #7E7E82;
+    
+}
+
+.nav__active {
+    background-color: white;
+    border-color: #B8FFEC;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.feedback {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'TTLakes';
+    padding-left: 56px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    color: #7E7E82;
+}
+
+p {
+    margin: 0;
+}
+
+.paragraph-2, .paragraph-3 {
+    display: none;
+}
+
+.article__more {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    font-weight: 500;
+    background: none;
+    border-width: 0px;
+    padding: 0;
+
+}
+
+.picture {
+    padding-top: 16px;
+}
+
+ .article__expand {
+     width: 24px;
+    height: 24px; 
+} 
+
+.article__expand > b {
+    font-size: 16px;
+}
+
+
+/* .name {
+    margin-top: 0px;
+    padding-top: 15px
+} */
+
+@media only screen and (min-width: 768px) {
+   .variable {
+    display: flex;
+    justify-content: space-between;
+   } 
+   .picture {
+    width: 360px;
+    height: 208px;
+
+   }
+   .call, .chat, .profile, .border-none {
+    display:block;
+    }
+    .paragraph-2 {
+        display: inline;
+    }
+
+    .section {
+        padding: 32px 24px;
+        padding-bottom:0;
+    }
+
+    .header {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    .picture {
+        width: 531px;
+        height: 307px;
+       } 
+
+    .call, .chat, .profile, .border, .menu, .logo, .variable-1{
+        display:none;
+    }
+
+    .variable-2, .feedback {
+        display: block;
+    }
+
+    .paragraph-3, .text {
+        display: inline;
+    }
+
+    .list-1 {
+        gap: 0px;
+    }
+
+    .section {
+        padding-top: 13px;
+    }
+
+    .header {
+        background-color: #F8F8F8;
+    }
+}
+
+/* .picture {
+     display: flex; 
+    height: auto;
+    width: auto;
+} */
